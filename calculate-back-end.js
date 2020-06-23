@@ -10,29 +10,29 @@ function calculate(s1, s2, sign) {
   let answer = 0;
   
   // Strings for operator comparison
-  let add = "+ plus added to";
-  let subtract = "- minus subtracted from";
-  let multiply = "x times X multiplied by";
-  let divide = "/ divide divided by";
-  let mod = "% modulus";
+  let add = ["+", "plus", "added to"];
+  let subtract = ["-", "minus", "subtracted from"];
+  let multiply = ["x", "times", "X", "multiplied by"];
+  let divide = ["/", "divide", "divided by"];
+  let mod = ["%", "modulus", "mod"];
   
-  if(add.includes(sign)) {
+  if(add.includes(sign.toLowerCase())) {
     answer = num1 + num2;
   }
 
-  else if(subtract.includes(sign)) {
+  else if(subtract.includes(sign.toLowerCase())) {
     answer = num1 - num2;
   }
 
-  else if(multiply.includes(sign)){
+  else if(multiply.includes(sign.toLowerCase())){
     answer = num1 * num2;
   }
 
-  else if(divide.includes(sign)) {
+  else if(divide.includes(sign.toLowerCase())) {
     answer = num1 / num2;
   }
 
-  else if(mod.includes(sign)) {
+  else if(mod.includes(sign.toLowerCase())) {
     answer = num1 % num2;
   }
 
